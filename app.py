@@ -19,7 +19,7 @@ def get_query_parameter(url):
 
 @app.route('/')
 def Homepage():
-    return "Homepage"
+    return "Page Not Found"
 
 @app.route("/calc")
 def calc():
@@ -35,16 +35,7 @@ def calc():
     except KeyError:
         return "ERROR"
 
-    print(request.url)
-    print(type(request.url))
-
     return url
-
-    #
-    #
-    #
-    #
-    # return request.url
 
 if __name__ == '__main__':
     app.run()
